@@ -1,5 +1,6 @@
 .hero {
     gap: 120px;
+    flex-shrink: 0;
     @include breakpoint-up(large){
         background: url('/images/homepage/desktop/image-homepage-hero.jpg'), lightgray 0px 0px / 100% 100% no-repeat;
     }

@@ -123,6 +123,7 @@ button,
 
 .hero {
   gap: 120px;
+  flex-shrink: 0;
 }
 @media (min-width: 64em) {
   .hero {
