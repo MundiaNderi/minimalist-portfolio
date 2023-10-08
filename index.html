@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Minimalist Portfolio</title>
-</head>
-<body>
-  
-  Home
-  Portfolio
-  Contact Me
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Inter:wght@400;700&family=Public+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="app/scss/styles.css" />
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+  </head>
+  <body>
+    <header>
+    <nav class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <!---Header and Logo -->
+        <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="Minimalist Portfolio" />
+        </a>
+        <span>
+          <svg id="btnHarmbuger" class="header_menu open hide-for-desktop"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="13"
+          viewBox="0 0 24 13"
+          fill="none"
+        >
+          <rect width="24" height="1" fill="#33323D" />
+          <rect y="6" width="24" height="1" fill="#33323D" />
+          <rect y="12" width="24" height="1" fill="#33323D" />
+        </svg>
+      </span>
+      <div class="header_links hide-for-mobile">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">CONTACT ME</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <!--
+    Home Portfolio Contact Me Hey, I’m Alex Spencer and I love building
+    beautiful websites About Me About Me I’m a junior front-end developer
+    looking for a new role in an exciting company. I focus on writing accessible
+    HTML, using modern CSS practices and writing clean JavaScript. When writing
+    JavaScript code, I mostly use React, but I can adapt to whatever tools are
+    required. I’m based in London, UK, but I’m happy working remotely and have
+    experience in remote teams. When I’m not coding, you’ll find me outdoors. I
+    love being out in nature whether that’s going for a walk, run or cycling.
+    I’d love you to check out my work. Go to Portfolio Interested in doing a
+    project together? Contact Me -->
 
-  Hey, I’m Alex Spencer and I love building beautiful websites
-
-  About Me
-
-  About Me
-
-  I’m a junior front-end developer looking for a new role in an exciting company. 
-  I focus on writing accessible HTML, using modern CSS practices and writing clean 
-  JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
-  whatever tools are required. I’m based in London, UK, but I’m happy working remotely 
-  and have experience in remote teams. When I’m not coding, you’ll find me outdoors. 
-  I love being out in nature whether that’s going for a walk, run or cycling. I’d love 
-  you to check out my work.
-
-  Go to Portfolio
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+    <!--JavaScript-->
+    <section class="hero">
+      <div class="hero__image">
+      </div>
+      <div class="hero__text">
+        <h1>Hey, I’m Alex<br> Spencer and I<br> love building<br>
+          beautiful websites</h1>
+         <a href="#" class="button hero_cta">
+          <button>ABOUT ME</button>
+         </a>
+      </div>
+    </section>
+    <script src="app/js/script.js"></script>
+  </body>
 </html>
