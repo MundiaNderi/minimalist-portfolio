@@ -10,3 +10,5 @@ btnhamburger.addEventListener('click', function(){
         btnhamburger.classList.add('open');
     }
 });
+
+// Add your JavaScript here

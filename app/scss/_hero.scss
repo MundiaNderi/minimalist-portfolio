@@ -1,33 +1,65 @@
 .hero {
-    gap: 120px;
-    flex-shrink: 0;
-    @include breakpoint-up(large){
-        background: url('/images/homepage/desktop/image-homepage-hero.jpg'), lightgray 0px 0px / 100% 100% no-repeat;
-    }
+  gap: 9px;
+  flex-shrink: 0;
+  width: 1218px;
+  height: 798px;
+  flex-shrink: 0;
 
-    @include breakpoint-down(small){
-        background: url('/images/homepage/mobile/image-homepage-hero@2x.jpg'), lightgray 0px 0px / 100% 100% no-repeat;
+  &__image {
+    position: relative;
+    @include breakpoint-up(large) {
+      background: url("/images/homepage/desktop/image-homepage-hero.jpg"),
+        lightgray 0px 0px / 100% 100% no-repeat;
     }
-    &__image{
-        align-items: center;
-        justify-content: center;
-        min-height: 16.875rem;
-        position: relative;
-        padding: 0px 22px 0px 17px;
-    }
+    min-height: 37.5rem;
+    margin: 45px 40px -400px 165px;
+    padding-left: 165px;
+    padding-top: 150px;
+    padding-right: 165px;
+    height: 600px;
+  }
 
-    &__text{
-        color: #33323D;
-        font-family: Ibarra Real Nova;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 42px; /* 105% */
-        letter-spacing: -0.357px;
-        background: #FAFAFA;
-        width: 445px;
-        height: 300xpx;
-        flex-shrink: 0;
-        padding: 56px 55px 101px 0px;
+  &__text {
+    position: absolute;
+    color: #33323d;
+    font-family: "Public sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 100% */
+    letter-spacing: -0.446px;
+    padding-left: 165px;
+    background: #fff;
+    margin: 56px 55px 101px 0px;
+    border-color: red($color: #000000);
+    width: 445px;
+    height: 357px;
+    gap: 53px;
+
+    button {
+      width: 200px;
+      height: 48px;
+      background: #203a4c;
+      display: flex;
+      align-items: center;
     }
+    button svg {
+      width: 48px;
+      height: 48px;
+      text-align: left;
+    }
+    button p {
+      color: #fff;
+      text-align: center;
+      font-family: "Public Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      width: 152px;
+      height: 14px;
+    }
+  }
 }
