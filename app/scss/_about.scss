@@ -1,11 +1,13 @@
 .about {
   gap: 200px;
-  width: 1440px;
-  height: 1964px;
-  display: grid;
-  grid-template-columns: 665px 350px;
-  grid-gap: 0px;
-  padding-right: 260px;
+  //width: 1440px;
+  //height: 1964px;
+  top: -1447px;
+  left: -1381px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   @include breakpoint-up(large) {
     background: url("/images/homepage/desktop/image-homepage-profile.jpg"),
@@ -18,22 +20,28 @@
     left: -12px;
     padding-left: 165px;
     margin: 34px 295px 42px 177px;
-  }
-
-  hr {
-    text-align: left;
-    width: 350px;
-    height: 1px;
-    opacity: 0.15;
-    background: #33323d;
+    height: 100%;
   }
 
   &__text {
     color: #33323d;
+    padding: 10px;
+    padding-right: 260px;
+
+    hr {
+      text-align: left;
+      width: 350px;
+      height: 1px;
+      opacity: 0.15;
+      top: 900px;
+      left: 830px;
+      background: #33323d;
+    }
 
     h1 {
       text-align: left;
       width: 350px;
+      height: 42px;
       font-family: "Ibarra Real Nova";
       font-size: 40px;
       font-style: normal;
@@ -51,7 +59,10 @@
       line-height: 30px; /* 187.5% */
       width: 350px;
       height: 360px;
-      padding-right: 260px;
+      padding-left: 16px;
+      opacity: 80%;
+      top: 70px;
+      text-align: left;
     }
 
     button {
@@ -66,8 +77,8 @@
     }
 
     button p {
-      width: 134px;
-      height: 14px;
+      //width: 134px;
+      //height: 14px;
       font-family: "Public Sans";
       color: #33323d;
       font-family: Public Sans;
@@ -77,7 +88,7 @@
       line-height: normal;
       letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 17px 36px 17px 32px;
+      //padding: 17px 36px 17px 32px;
     }
   }
 }

@@ -1,0 +1,49 @@
+.footer {
+  width: 1440px;
+  height: 80px;
+  flex-shrink: 0;
+  background: #33323d;
+  display: flex;
+  flex-direction: row;
+  svg {
+    width: 61px;
+    height: 32px;
+    flex-shrink: 0;
+    color: hsla(0, 0%, 100%, 1);
+    margin: 24px 1214px 24px 165px;
+  }
+  nav {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  &__home {
+    width: 43px;
+    height: 14px;
+    color: #fff;
+    font-family: "Public Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__portfolio {
+  }
+
+  &__contact {
+  }
+
+  &__social {
+    //width: 104px;
+    //height: 24px;
+    flex-shrink: 0;
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
