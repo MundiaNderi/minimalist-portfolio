@@ -1,0 +1,46 @@
+.footer {
+    padding-right: 164px;
+    padding-left: 165px;
+    padding-top: 90px;
+    width: 1111px;
+    height: 32px;
+
+    
+    nav {
+        padding: 24px;
+    }
+    &_logo {
+
+        img {
+            width: 60.082px;
+            height: 32px;
+            flex-shrink: 0;
+            margin-right: 0px;
+
+            @include breakpoint-down(medium) {
+                padding-left: 32px;
+                padding-right: 282.92px;
+            }
+        }
+    }
+
+    
+    &_links { // targets the href within footer links
+        ul {
+            padding-left: 50px;
+            list-style: none;
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        ul li {
+            display: inline-block;
+        }
+    }
+}
+.social-links{
+    margin-left: 830px;
+    margin-top: -35px;
+}
