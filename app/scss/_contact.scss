@@ -1,20 +1,20 @@
 .contact-page {
-    display: flex;
-    
-    h1 {
-      color: #33323D;
-      font-family: Ibarra Real Nova;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 42px; /* 105% */
-      letter-spacing: -0.357px;
-      width: 350px;
-      margin-left: 15%;
-    }
-    
-    p{
-    color: #33323D;
+  display: flex;
+
+  h1 {
+    color: #33323d;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    margin-left: 15%;
+  }
+
+  p {
+    color: #33323d;
     font-family: Public Sans;
     font-size: 16px;
     font-style: normal;
@@ -22,62 +22,135 @@
     line-height: 30px; /* 187.5% */
     width: 635px;
     opacity: 0.8;
-    }
+  }
 }
-    
+
 .contact-me {
-    display: flex;
+  display: flex;
 
-
-    h1{
-      color: #33323D;
-      font-family: Ibarra Real Nova;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 42px; /* 105% */
-      letter-spacing: -0.357px;
-      width: 350px;
-      margin-left: 15%;
-      padding-top:2%
-    }
+  h1 {
+    color: #33323d;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
 }
-    .Contact-form{
-      color: #33323D;
-      font-family: Public Sans;
-      font-size: 13px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 30px; /* 230.769% */
-      opacity: 0.8;
-    }
+.Contact-form {
+  color: #33323d;
+  font-family: Public Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 230.769% */
+  opacity: 0.8;
+}
 
-    
-    .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group textarea {
-          width: 310%;
-          padding: 8px;
-          border: 1px solid #33323D;
-          border-radius: 4px;
-          background-color: #33323D;
-        }
-    
-        .hero-btn{
-          text-decoration: none;
-          color: #FAFAFA;
-          position: relative;
-          cursor: pointer;
-        }
-        .hero-btn:hover{
-          background: #33323D;
-          transition: 1s;
-        }
-    
-        .contact-me h4 {
-          padding-top: 1%;
-          padding-bottom: -8%;
-        }
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 310%;
+  padding: 8px;
+  border: 1px solid #33323d;
+  border-radius: 4px;
+  background-color: #33323d;
+}
 
+.hero-btn {
+  text-decoration: none;
+  color: #fafafa;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background: #33323d;
+  transition: 1s;
+}
 
-        
+.contact-me h4 {
+  padding-top: 1%;
+  padding-bottom: -8%;
+}
+.contact-page {
+  display: flex;
+
+  h1 {
+    color: #33323d;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    margin-left: 15%;
+  }
+
+  p {
+    color: #33323d;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    width: 635px;
+    opacity: 0.8;
+  }
+}
+
+.contact-me {
+  display: flex;
+
+  h1 {
+    color: #33323d;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+}
+.Contact-form {
+  color: #33323d;
+  font-family: Public Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 230.769% */
+  opacity: 0.8;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 310%;
+  padding: 8px;
+  border: 1px solid #33323d;
+  border-radius: 4px;
+  background-color: #33323d;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #fafafa;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background: #33323d;
+  transition: 1s;
+}
+
+.contact-me h4 {
+  padding-top: 1%;
+  padding-bottom: -8%;
+}

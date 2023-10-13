@@ -1,34 +1,23 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-* {
-  outline: solid 1px red;
-}
-
-*,
-*::before *::after {
+*, *::before *::after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  width: 100vw;
   padding: 0;
+  font-family: "Public Sans", "sans-serif";
   line-height: 1.3;
-  background-color: #fff;
-  font-family: "Ibarra Real Nova", sans-serif;
 }
 
-a,
-a:visited,
-a:hover {
+a, a:visited, a:hover {
   text-decoration: none;
   color: hsl(245, 10%, 22%);
-  font-family: "Public Sans";
+  font-family: Public Sans;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -50,6 +39,26 @@ a:hover {
   align-items: center;
 }
 
+button,
+.buttons {
+  display: inline-block;
+  padding: 1rem;
+  height: 48px;
+  border: 1px solid #33323D;
+  flex-shrink: 0;
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #33323D;
+  color: #33323D;
+  font-family: Public Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -63,12 +72,18 @@ a:hover {
 }
 
 .header {
-  margin: 64px 164px 0px 165px;
+  padding: 64px;
+  padding-right: 164px;
+  padding-left: 165px;
+  width: 1111px;
+  height: 32px;
 }
 .header nav {
   padding: 24px;
 }
 .header_logo img {
+  width: 60.082px;
+  height: 32px;
   flex-shrink: 0;
   margin-right: 0px;
 }
@@ -90,243 +105,177 @@ a:hover {
   cursor: pointer;
 }
 .header_menu > span:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
-.header_links a {
-  color: #33323d;
-  font-family: Public Sans;
-  font-size: 12px;
-  font-style: normal;
+.header_links ul {
+  margin-right: 10px;
+  padding-left: 700px;
+  list-style: none;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-top: 9px;
-  padding-bottom: 9px;
+}
+.header_links ul li {
+  display: inline-block;
 }
 
 .hero {
-  gap: 9px;
+  gap: 120px;
   flex-shrink: 0;
-  width: 1218px;
-  height: 798px;
-  flex-shrink: 0;
-}
-.hero__image {
-  position: relative;
-  min-height: 37.5rem;
-  margin: 45px 0px -400px 165px;
-  padding: 45px 108px 153px 0px;
 }
 @media (min-width: 64em) {
-  .hero__image {
+  .hero {
     background: url("/images/homepage/desktop/image-homepage-hero.jpg"), lightgray 0px 0px/100% 100% no-repeat;
   }
 }
+@media (max-width: 39.3975em) {
+  .hero {
+    background: url("/images/homepage/mobile/image-homepage-hero@2x.jpg"), lightgray 0px 0px/100% 100% no-repeat;
+  }
+}
+.hero__image {
+  align-items: center;
+  justify-content: center;
+  min-height: 16.875rem;
+  position: relative;
+  padding: 0px 22px 0px 17px;
+}
 .hero__text {
-  position: absolute;
-  color: #33323d;
-  font-family: "Public sans";
+  color: #33323D;
+  font-family: Ibarra Real Nova;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 100% */
-  letter-spacing: -0.446px;
-  margin: 56px 55px 101px 0px;
-  padding-left: 165px;
-  background: #fff;
-  margin: 56px 55px 101px 0px;
-  border-color: 0;
+  line-height: 42px; /* 105% */
+  letter-spacing: -0.357px;
+  background: #FAFAFA;
   width: 445px;
-  height: 357px;
-  gap: 53px;
+  height: 300xpx;
+  flex-shrink: 0;
+  padding: 56px 55px 101px 0px;
 }
-.hero__text button {
-  background: #203a4c;
-  display: flex;
-  align-items: center;
+
+.footer {
+  padding-right: 164px;
+  padding-left: 165px;
+  padding-top: 90px;
+  width: 1111px;
+  height: 32px;
 }
-.hero__text button svg {
-  width: 48px;
-  height: 48px;
-  text-align: left;
+.footer nav {
+  padding: 24px;
 }
-.hero__text button p {
-  color: #fff;
-  text-align: center;
-  font-family: "Public Sans";
-  font-size: 12px;
-  font-style: normal;
+.footer_logo img {
+  width: 60.082px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-right: 0px;
+}
+@media (max-width: 63.9375em) {
+  .footer_logo img {
+    padding-left: 32px;
+    padding-right: 282.92px;
+  }
+}
+.footer_links ul {
+  padding-left: 50px;
+  list-style: none;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
-  width: 152px;
-  height: 14px;
+}
+.footer_links ul li {
+  display: inline-block;
 }
 
-.about {
-  gap: 200px;
-  top: -1447px;
-  left: -1381px;
+.social-links {
+  margin-left: 830px;
+  margin-top: -35px;
+}
+
+.contact-page {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
-@media (min-width: 64em) {
-  .about {
-    background: url("/images/homepage/desktop/image-homepage-profile.jpg"), #fff 0px 0px/100% 100% no-repeat;
-    background-repeat: no-repeat;
-    width: 1012px;
-    height: 676px;
-    top: 866px;
-    left: -12px;
-    padding-left: 165px;
-    margin: 34px 295px 42px 177px;
-    height: 100%;
-  }
-}
-.about__text {
-  color: #33323d;
-  padding: 10px;
-  padding-right: 260px;
-}
-.about__text hr {
-  text-align: left;
-  width: 350px;
-  height: 1px;
-  opacity: 0.15;
-  top: 900px;
-  left: 830px;
-  background: #33323d;
-}
-.about__text h1 {
-  text-align: left;
-  width: 350px;
-  height: 42px;
-  font-family: "Ibarra Real Nova";
+.contact-page h1 {
+  color: #33323D;
+  font-family: Ibarra Real Nova;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 42px; /* 105% */
   letter-spacing: -0.357px;
+  width: 350px;
+  margin-left: 15%;
 }
-.about__text p {
-  gap: 28px;
-  font-family: "Public Sans";
+.contact-page p {
+  color: #33323D;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 187.5% */
-  width: 350px;
-  height: 360px;
-  padding-left: 16px;
-  opacity: 80%;
-  top: 70px;
-  text-align: left;
-}
-.about__text button {
-  width: 202px;
-  height: 48px;
-  background: #fff;
-  border: 1px solid #33323d;
-}
-.about__text button a {
-  align-items: center;
-}
-.about__text button p {
-  font-family: "Public Sans";
-  color: #33323d;
-  font-family: Public Sans;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  width: 635px;
+  opacity: 0.8;
 }
 
-.interest {
-  flex-shrink: 0;
+.contact-me {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0 165px 230px 165px;
-  padding-top: 100px;
 }
-.interest h1 {
-  width: 350px;
-  height: 84px;
-  color: #33323d;
-  font-family: "Ibarra Real Nova";
+.contact-me h1 {
+  color: #33323D;
+  font-family: Ibarra Real Nova;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 42px; /* 105% */
   letter-spacing: -0.357px;
-  float: left;
-}
-.interest hr {
-  width: 534px;
-  height: 1px;
-  flex-shrink: 0;
-  opacity: 0.15;
-  background: #33323d;
-  margin: 48px 194px 34px 382px;
-}
-.interest__contact {
-  width: 162px;
-  height: 48px;
-  flex-shrink: 0;
-  border: 1px solid #33323d;
-  text-align: center;
-  color: #33323d;
-  font-family: Public Sans;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding-right: 165px;
+  width: 350px;
+  margin-left: 15%;
+  padding-top: 2%;
 }
 
-.footer {
-  width: 1440px;
-  height: 80px;
-  flex-shrink: 0;
-  background: #33323d;
-  display: flex;
-  flex-direction: row;
-}
-.footer svg {
-  width: 61px;
-  height: 32px;
-  flex-shrink: 0;
-  color: hsl(0, 0%, 100%);
-  margin: 24px 1214px 24px 165px;
-}
-.footer nav {
-  list-style: none;
-  padding: 0;
-}
-.footer nav li {
-  display: inline-block;
-}
-.footer__home {
-  width: 43px;
-  height: 14px;
-  color: #fff;
-  font-family: "Public Sans";
-  font-size: 12px;
+.Contact-form {
+  color: #33323D;
+  font-family: Public Sans;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 30px; /* 230.769% */
+  opacity: 0.8;
 }
-.footer__social {
-  flex-shrink: 0;
-  color: hsl(0, 0%, 100%);
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group textarea {
+  width: 310%;
+  padding: 8px;
+  border: 1px solid #33323D;
+  border-radius: 4px;
+  background-color: #33323D;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #FAFAFA;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #33323D;
+  transition: 1s;
+}
+
+.contact-me h4 {
+  padding-top: 1%;
+  padding-bottom: -8%;
+}
+
+.portfolio {
+  width: 540px;
+  height: 500px;
 }/*# sourceMappingURL=styles.css.map */
