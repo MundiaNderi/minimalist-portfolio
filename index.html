@@ -19,10 +19,9 @@
     <title>Frontend Mentor | Minimalist Portfolio</title>
   </head>
   <body>
-    <header>
-    <nav class="header">
+    <header class="header">
+      <!---Header and Logo -->
       <nav class="flex flex-jc-sb flex-ai-c">
-        <!---Header and Logo -->
         <a href="/" class="header__logo">
           <img src="images/logo.svg" alt="Minimalist Portfolio" />
         </a>
@@ -39,28 +38,16 @@
           <rect y="12" width="24" height="1" fill="#33323D" />
         </svg>
       </span>
-      <div class="header_links hide-for-mobile">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">CONTACT ME</a></li>
+      <div class="header__links hide-for-mobile">
+        <a href="#">HOME</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">CONTACT ME</a>
         </ul>
       </div>
     </nav>
   </header>
-    <!--
-    Home Portfolio Contact Me Hey, I’m Alex Spencer and I love building
-    beautiful websites About Me About Me I’m a junior front-end developer
-    looking for a new role in an exciting company. I focus on writing accessible
-    HTML, using modern CSS practices and writing clean JavaScript. When writing
-    JavaScript code, I mostly use React, but I can adapt to whatever tools are
-    required. I’m based in London, UK, but I’m happy working remotely and have
-    experience in remote teams. When I’m not coding, you’ll find me outdoors. I
-    love being out in nature whether that’s going for a walk, run or cycling.
-    I’d love you to check out my work. Go to Portfolio Interested in doing a
-    project together? Contact Me -->
-
     <main>
+      <!--Hero Section-->
     <section class="hero">
       <div class="hero__image">
       </div>
@@ -94,12 +81,36 @@
           and have experience in remote teams.<br>When I’m not coding, you’ll find me outdoors. 
           I<br>love being out in nature whether that’s going<br>for a walk, 
           run or cycling. I’d love you to check<br> out my work.</p>
-            <a href="#" class="portfolio"><button><p>GO TO PORTFOLIO</p></button></a>
+          <button>GO TO PORTFOLIO</button>
           <hr>
       </div>
     </section>
+    <!--Contact Section-->
+    <section class="interest">
+      <div class="interest__project">
+        <h1>Interested in doing<br>a project together?</h1>
+        <hr>
+        </div>
+        <!--Add a button div-->
+    </section>
+    <!--Footer Section-->
+    <div class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32" viewBox="0 0 61 32" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z" fill="white"/>
+      </svg>
+      <nav>
+        <!--i-
+        <ul>
+          <li class="footer__home"><a href="#home">HOME</a></li>
+          <li class="footer__portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+          <li class="footer__contact"><a href="#contact">CONTACT ME</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__social">
+    Add social icons-->
+    </div>
     </main>
-
     <!--JavaScript-->
     <script src="app/js/script.js"></script>
   </body>

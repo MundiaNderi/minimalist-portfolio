@@ -1,10 +1,10 @@
 .hero {
   gap: 9px;
+  overflow: hidden;
   flex-shrink: 0;
   width: 1218px;
   height: 798px;
   flex-shrink: 0;
-
   &__image {
     position: relative;
     @include breakpoint-up(large) {
@@ -12,11 +12,8 @@
         lightgray 0px 0px / 100% 100% no-repeat;
     }
     min-height: 37.5rem;
-    margin: 45px 40px -400px 165px;
-    padding-left: 165px;
-    padding-top: 150px;
-    padding-right: 165px;
-    height: 600px;
+    margin: 45px 0px -400px 165px; // space to the left of the site.
+    padding: 45px 108px 153px 0px;
   }
 
   &__text {
@@ -28,6 +25,7 @@
     font-weight: 700;
     line-height: 50px; /* 100% */
     letter-spacing: -0.446px;
+    margin: 56px 55px 101px 0px;
     padding-left: 165px;
     background: #fff;
     margin: 56px 55px 101px 0px;
@@ -37,11 +35,12 @@
     gap: 53px;
 
     button {
-      width: 200px;
-      height: 48px;
+      //width: 200px;
+      //height: 48px;
       background: #203a4c;
       display: flex;
       align-items: center;
+      //padding: 53px 190px 0px 0px;
     }
     button svg {
       width: 48px;
