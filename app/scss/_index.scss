@@ -1,0 +1,147 @@
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 20px;
+  color: #33323d;
+}
+
+.nav {
+  &__menu {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+    color: #33323d;
+  }
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(/images/homepage/desktop/image-homepage-hero.jpg);
+
+  &__content {
+    display: flex;
+  }
+
+  &__main {
+    background: white;
+    padding-top: 1em;
+    padding-right: 2em;
+
+    &__btn {
+      padding-top: 10px;
+    }
+  }
+}
+
+.flex {
+  &__1 {
+    flex: 1;
+  }
+
+  &__2 {
+    flex: 2;
+  }
+
+  &__9 {
+    flex: 9;
+  }
+}
+
+button {
+  background: #33323d;
+  padding: 1em 4em;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background: #33323d;
+  padding: 1em 4em;
+  color: white;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  margin-bottom: 3em;
+}
+
+.about {
+  margin-bottom: 8em;
+  display: flex;
+  margin-top: 8em;
+  font-family: "Public Sans";
+  opacity: 0.8;
+
+  &__content {
+    line-height: 2;
+    margin-bottom: 2em;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__image {
+    background-image: url("/images/homepage/desktop/image-homepage-profile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.interest {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 8em;
+
+  &__contact {
+    text-align: right;
+  }
+}
+
+.footer-1 {
+  background-color: #33323d;
+  margin-top: 4em;
+}
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+svg {
+  padding-left: 10em;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  color: white;
+  font-family: "Public Sans";
+  font-size: 12px;
+  padding-right: 10em;
+
+  li {
+    color: white;
+  }
+}
