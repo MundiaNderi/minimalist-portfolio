@@ -86,23 +86,31 @@ nav {
   color: #33323d;
 }
 
-.hero {
+.hero1 {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
   background-image: url(/images/homepage/desktop/image-homepage-hero.jpg);
 }
-.hero__content {
+.hero1__content {
   display: flex;
 }
-.hero__main {
+.hero1__main {
   background: white;
   padding-top: 1em;
   padding-right: 2em;
 }
-.hero__main__btn {
+.hero1__main__btn {
   padding-top: 10px;
+}
+.hero1__button {
+  display: flex;
+  align-items: center;
+}
+.hero1__button img {
+  max-width: 100%;
+  margin-right: 10px;
 }
 
 .flex__1 {
@@ -124,13 +132,14 @@ button {
 }
 
 .btn {
-  background: #33323d;
+  background: white;
   padding: 1em 4em;
-  color: white;
+  color: #33323d;
   border: none;
   outline: none;
   text-decoration: none;
   margin-bottom: 3em;
+  border: 1px solid #33323d;
 }
 
 .about {
@@ -159,6 +168,7 @@ button {
   align-items: center;
   gap: 20px;
   padding-left: 8em;
+  margin-bottom: 4em;
 }
 .interest__contact {
   text-align: right;
@@ -179,6 +189,10 @@ svg {
   padding-left: 10em;
 }
 
+.footer__list {
+  color: white;
+}
+
 .footer__menu {
   display: flex;
   flex-direction: row;
@@ -190,46 +204,8 @@ svg {
   font-size: 12px;
   padding-right: 10em;
 }
-
-.footer {
-  padding-right: 164px;
-  padding-left: 165px;
-  padding-top: 90px;
-  width: 1111px;
-  height: 32px;
-  background-color: #33323d;
-}
-.footer nav {
-  padding: 24px;
-}
-.footer_logo img {
-  width: 60.082px;
-  height: 32px;
-  flex-shrink: 0;
-  margin-right: 0px;
-}
-@media (max-width: 63.9375em) {
-  .footer_logo img {
-    padding-left: 32px;
-    padding-right: 282.92px;
-  }
-}
-.footer_links ul {
-  padding-left: 50px;
-  list-style: none;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.footer_links ul li {
-  display: inline-block;
-}
-
-.social-links {
-  margin-left: 830px;
-  margin-top: -35px;
+.footer__menu__menu a {
+  color: white;
 }
 
 .contact-page {
@@ -388,7 +364,102 @@ svg {
   padding-bottom: -8%;
 }
 
-.portfolio {
-  width: 540px;
-  height: 500px;
+.manage {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  margin-bottom: 4em;
+}
+.manage__container {
+  display: flex;
+}
+.manage__content {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  opacity: 0.8;
+}
+.manage__image {
+  background: url("/images/portfolio/desktop/image-portfolio-manage.jpg"), lightgray 0px 0px/100% 100% no-repeat;
+  box-shadow: 0px 2px 46px 0px rgba(243, 96, 60, 0.1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.bookmark {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4em;
+  background-color: #fafafa;
+}
+.bookmark__content {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  opacity: 0.8;
+}
+.bookmark__container {
+  display: flex;
+}
+.bookmark__image {
+  background: url("/images/portfolio/desktop/image-portfolio-bookmark.jpg"), 0px 0px/100% 100% no-repeat;
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.insure {
+  display: flex;
+  flex-direction: row;
+  background: #fafafa;
+  margin-bottom: 4em;
+}
+.insure__container {
+  display: flex;
+}
+.insure__image {
+  background: url("/images/portfolio/desktop/image-portfolio-insure@2x.jpg"), white 0px 0px/100% 100% no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.insure__content {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  opacity: 0.8;
+}
+
+.fylo {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  margin-bottom: 4em;
+}
+.fylo__image {
+  background: url("/images/portfolio/desktop/image-portfolio-fylo.jpg"), white 0px 0px/100% 100% no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fylo__content {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  opacity: 0.8;
 }/*# sourceMappingURL=styles.css.map */

@@ -27,7 +27,7 @@ nav {
   }
 }
 
-.hero {
+.hero1 {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,16 @@ nav {
     &__btn {
       padding-top: 10px;
     }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button img {
+    max-width: 100%;
+    margin-right: 10px;
   }
 }
 
@@ -72,13 +82,14 @@ button {
 }
 
 .btn {
-  background: #33323d;
+  background: white;
   padding: 1em 4em;
-  color: white;
+  color: #33323d;
   border: none;
   outline: none;
   text-decoration: none;
   margin-bottom: 3em;
+  border: 1px solid #33323d;
 }
 
 .about {
@@ -110,6 +121,7 @@ button {
   align-items: center;
   gap: 20px;
   padding-left: 8em;
+  margin-bottom: 4em;
 
   &__contact {
     text-align: right;
@@ -130,6 +142,10 @@ svg {
   padding-left: 10em;
 }
 
+.footer__list {
+  color: white;
+}
+
 .footer__menu {
   display: flex;
   flex-direction: row;
@@ -141,7 +157,7 @@ svg {
   font-size: 12px;
   padding-right: 10em;
 
-  li {
+  &__menu a {
     color: white;
   }
 }
