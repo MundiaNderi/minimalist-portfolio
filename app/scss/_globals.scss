@@ -21,12 +21,9 @@ body {
   font-family: "Ibarra Real Nova", sans-serif;
 }
 
-a,
-a:visited,
-a:hover {
+a {
   // Need to check this for hover and visited cases
   text-decoration: none;
-  color: $onyx;
   font-family: "Public Sans";
   font-size: 12px;
   font-style: normal;

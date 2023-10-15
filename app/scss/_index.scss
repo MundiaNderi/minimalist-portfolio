@@ -14,7 +14,10 @@ nav {
   list-style: none;
   text-decoration: none;
   gap: 20px;
-  color: #33323d;
+
+  &__menu li {
+    color: #33323d;
+  }
 }
 
 .nav {
@@ -128,9 +131,30 @@ button {
   }
 }
 
-.footer-1 {
-  background-color: #33323d;
+.footer {
   margin-top: 4em;
+  background: white;
+  color: white;
+
+  &__nav {
+    background-color: red;
+    color: white;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    color: white;
+    font-family: "Public Sans";
+    font-size: 12px;
+    padding-right: 10em;
+  }
+  &__menu li {
+    color: white;
+  }
 }
 .container-1 {
   display: flex;
@@ -144,20 +168,4 @@ svg {
 
 .footer__list {
   color: white;
-}
-
-.footer__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  gap: 20px;
-  color: white;
-  font-family: "Public Sans";
-  font-size: 12px;
-  padding-right: 10em;
-
-  &__menu a {
-    color: white;
-  }
 }
