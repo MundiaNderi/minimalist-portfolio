@@ -133,12 +133,10 @@ button {
 
 .footer {
   margin-top: 4em;
-  background: white;
-  color: white;
+  background-color: #33323d;
 
   &__nav {
-    background-color: red;
-    color: white;
+    color: #fff;
   }
 
   &__menu {
@@ -147,13 +145,13 @@ button {
     justify-content: space-between;
     list-style: none;
     gap: 20px;
-    color: white;
+    color: #fff;
     font-family: "Public Sans";
     font-size: 12px;
     padding-right: 10em;
   }
   &__menu li {
-    color: white;
+    color: #fff;
   }
 }
 .container-1 {
