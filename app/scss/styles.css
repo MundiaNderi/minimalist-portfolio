@@ -632,3 +632,12 @@ svg {
   box-shadow: 0px 2px 46px 0px rgba(243, 96, 60, 0.1);
   min-height: 50vh;
 }/*# sourceMappingURL=styles.css.map */
+
+.previews {
+ padding-left: 50%;
+ margin-top: -250px;
+}
+
+.social {
+  padding-top: 5%;
+}
