@@ -1,0 +1,39 @@
+.image3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .social {
+    padding-top: 5%;
+    padding-right: 9%;
+  }
+
+.bookmark {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4em;
+    background-color: #fafafa;
+
+
+    &__manage1 {
+      color: #33323d;
+      font-family: "Public Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+      opacity: 0.8;
+  }
+}
+
+.previews {
+    padding-left: 55%;
+    margin-top: -260px;
+}
+
+.color{
+    background-color: #fff;
+  }
