@@ -170,16 +170,17 @@ svg {
   padding-left: 10em;
 }
 
-.footer__list {
-  //color: white !important;
-}
-
 // Mobile queries //
 // small screens
 @media only screen and (max-width: 450px) {
   .container {
     //max-width: 390px;
     padding: 0 32px;
+  }
+
+  .nav__menu {
+    //border: 2px solid red;
+    display: none;
   }
   .hero1 {
     width: 100%;

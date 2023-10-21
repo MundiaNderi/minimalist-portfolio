@@ -18,106 +18,154 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Inter:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/app/scss/styles.css" />
     <title>Frontend Mentor | Minimalist Portfolio</title>
   </header>
   <body>
-    <div class="container">
+    <div id="container1" class="container">
       <nav>
         <div>
-          <img src="./logo.png" alt="Site logo" />
+          <img src="/images/logo.svg" alt="Site logo" />
         </div>
         <div>
-          <ul class="nav-menu">
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Contact Me</li>
+          <ul class="nav__menu hide-for-mobile">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT Me</a></li>
           </ul>
+        </div>
+        <div class="hide-for-desktop">
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="13"
+            viewBox="0 0 24 13"
+            fill="none"
+          >
+            <rect
+              width="24"
+              height="1"
+              fill="#33323D"
+              class="hamburger__bar hamburger-top"
+            />
+            <rect
+              y="6"
+              width="24"
+              height="1"
+              fill="#33323D"
+              class="hamburger__bar hamburger-mid"
+            />
+            <rect
+              y="12"
+              width="24"
+              height="1"
+              fill="#33323D"
+              class="hamburger__bar hamburger-bot"
+            />
+          </svg>
         </div>
       </nav>
       <!--Hero Image-->
-      <div class="hero">
-        <div class="hero-content">
-          <div class="flex-1 hero-content-main">
+      <div class="hero1">
+        <div class="hero1__content">
+          <div class="flex-1 hero1__main">
+            <img
+              class="hide-for-desktop"
+              src="./images/homepage/mobile/image-homepage-hero.jpg"
+            />
             <h1>Hey I'm Alex Spencer and I love building beautiful websites</h1>
-            <button class="hero-button">About Me</button>
+            <a href="#about-1">
+              <button class="hero1_button">
+                <img src="images/icons/down-arrows.svg" /> About Me
+              </button>
+            </a>
           </div>
-          <div class="flex-1"></div>
-          <div class="flex-1"></div>
+          <div class="flex__1"></div>
+          <div class="flex__"></div>
         </div>
       </div>
       <!--About Me-->
-      <div class="about">
-        <div class="flex-1 about-image"></div>
-        <div class="flex-1">
-          <div class="about-container-content">
-            <div class="flex-1"></div>
-            <div class="flex-9">
-              <hr />
-              <h1>About Me</h1>
-              <p class="about-content">
-                I’m a junior front-end developer looking for a new role in an
-                exciting company. I focus on writing accessible HTML, using
-                modern CSS practices and writing clean JavaScript. When writing
-                JavaScript code, I mostly use React, but I can adapt to whatever
-                tools are required. I’m based in London, UK, but I’m happy
-                working remotely and have experience in remote teams. When I’m
-                not coding, you’ll find me outdoors. I love being out in nature
-                whether that’s going for a walk, run or cycling. I’d love you to
-                check out my work.
-              </p>
-              <a class="btn" href="">Go To Portfolio</a>
-              <hr style="margin-top: 3em" />
+      <section id="about-1">
+        <div class="about">
+          <div class="flex__1 about__image hide-for-mobile"></div>
+          <img
+            class="hide-for-desktop"
+            src="./images/homepage/mobile/image-homepage-profile.jpg"
+          />
+          <div class="flex__1">
+            <div class="about__container">
+              <div class="flex__1"></div>
+              <div class="flex__9">
+                <hr class="line" />
+                <h1>About Me</h1>
+                <p class="about__content">
+                  I’m a junior front-end developer looking for a new role in an
+                  exciting company. I focus on writing accessible HTML, using
+                  modern CSS practices and writing clean JavaScript. When
+                  writing JavaScript code, I mostly use React, but I can adapt
+                  to whatever tools are required. I’m based in London, UK, but
+                  I’m happy working remotely and have experience in remote
+                  teams. When I’m not coding, you’ll find me outdoors. I love
+                  being out in nature whether that’s going for a walk, run or
+                  cycling. I’d love you to check out my work.
+                </p>
+                <a href="portfolio.html">
+                  <button class="btn">GO TO PORTFOLIO</button>
+                </a>
+                <hr />
+              </div>
+              <div class="flex__2"></div>
             </div>
-            <div class="flex-2"></div>
           </div>
         </div>
-      </div>
+      </section>
       <!--Interest-->
       <div class="interest">
-        <div class="flex-1">
+        <div class="flex__1">
           <h1>Interested in doing a project together?</h1>
         </div>
-        <div class="flex-1">
+        <div class="flex__1">
           <hr />
         </div>
-        <div class="flex-1 interest-contact">
-          <a class="btn" href="#">CONTACT ME</a>
+        <div class="flex__1 interest__contact">
+          <a href="contact.html">
+            <button class="btn">CONTACT ME</button>
+          </a>
         </div>
       </div>
     </div>
 
     <!--Footer-->
-    <div class="footer-1">
+    <footer class="footer">
       <div class="container-1">
-        <div class="flex-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="61"
-            height="32"
-            viewBox="0 0 61 32"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-        <div class="flex-1">
-          <nav class="footer-nav">
-            <div>
-              <ul class="footer-menu">
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Contact Me</li>
-              </ul>
-            </div>
+        <!-- <div class="flex__1">  -->
+        <svg
+          class="footer__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="61"
+          height="32"
+          viewBox="0 0 61 32"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
+            fill="white"
+          />
+        </svg>
+        <!-- </div>  -->
+        <div class="flex__1">
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
           </nav>
         </div>
-        <div class="flex-1 footer-social">
+        <div class="flex__1 footer__social">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="104"
@@ -142,6 +190,6 @@
           </svg>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

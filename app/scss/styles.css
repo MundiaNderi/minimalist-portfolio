@@ -216,6 +216,9 @@ svg {
   .container {
     padding: 0 32px;
   }
+  .nav__menu {
+    display: none;
+  }
   .hero1 {
     width: 100%;
     background-image: none;
@@ -515,6 +518,29 @@ svg {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 0 32px;
+  }
+  .manage {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  .manage__container {
+    justify-content: center;
+    align-items: center;
+  }
+  .manage__container hr {
+    margin-top: 2em;
+  }
+  .bookmark {
+    flex-direction: column;
+    background-color: white;
+  }
+  .fylo {
+    flex-direction: column;
+  }
+}
 .container {
   max-width: 1320px;
   margin: auto;
@@ -675,6 +701,9 @@ svg {
 @media only screen and (max-width: 450px) {
   .container {
     padding: 0 32px;
+  }
+  .nav__menu {
+    display: none;
   }
   .hero1 {
     width: 100%;

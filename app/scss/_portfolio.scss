@@ -111,3 +111,35 @@
     opacity: 0.8;
   }
 }
+// Mobile screens
+@media only screen and (max-width: 450px) {
+  .container {
+    //max-width: 390px;
+    padding: 0 32px;
+  }
+
+  .manage {
+    flex-direction: column;
+    //border: 2px solid red;
+    margin-bottom: 2em;
+  }
+
+  .manage__container {
+    justify-content: center;
+    align-items: center;
+    //border: 2px solid blue;
+  }
+
+  .manage__container hr {
+    margin-top: 2em;
+  }
+
+  .bookmark {
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .fylo {
+    flex-direction: column;
+  }
+}
