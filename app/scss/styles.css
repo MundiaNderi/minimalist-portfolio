@@ -424,10 +424,6 @@ svg {
   padding-bottom: -8%;
 }
 
-.footer {
-  border: 2px solid red;
-}
-
 @media only screen and (max-width: 450px) {
   .container {
     max-width: 390px;
