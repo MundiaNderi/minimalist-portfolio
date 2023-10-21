@@ -15,18 +15,25 @@ nav {
   text-decoration: none;
   gap: 20px;
 
-  &__menu li {
-    color: #33323d;
+  &__menu li a {
+    color: $onyx;
+    display: block;
+    text-align: center;
+  }
+  &__menu li a:visited {
+    color: #5fb4a2;
+  }
+
+  &__menu li a:hover {
+    color: blue;
   }
 }
-
 .nav {
   &__menu {
     display: flex;
     list-style: none;
     text-decoration: none;
-    gap: 20px;
-    color: #33323d;
+    color: $onyx;
   }
 }
 
@@ -122,7 +129,6 @@ button {
 .interest {
   display: flex;
   align-items: center;
-  gap: 20px;
   padding-left: 8em;
   margin-bottom: 4em;
 
@@ -135,22 +141,22 @@ button {
   margin-top: 4em;
   background-color: #33323d;
 
-  &__nav {
-    color: #fff;
-  }
-
   &__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    gap: 20px;
-    color: #fff;
     font-family: "Public Sans";
     font-size: 12px;
     padding-right: 10em;
   }
   &__menu li {
+    margin-right: 2em;
+  }
+  &__menu li a {
+    color: #fff;
+  }
+  &__menu li a:visited {
     color: #fff;
   }
 }
@@ -165,5 +171,63 @@ svg {
 }
 
 .footer__list {
-  color: white;
+  //color: white !important;
+}
+
+// Mobile queries //
+// small screens
+@media only screen and (max-width: 450px) {
+  .container {
+    //max-width: 390px;
+    padding: 0 32px;
+  }
+  .hero1 {
+    width: 100%;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5em;
+    margin-bottom: 4em;
+  }
+
+  .line {
+    margin-top: 2em;
+  }
+
+  .interest {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .footer .container-1 {
+    flex-direction: column;
+    padding: 2em 0;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__menu li {
+    margin: 1em 0;
+  }
+
+  .footer__social svg {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__svg {
+    padding: 0;
+  }
 }

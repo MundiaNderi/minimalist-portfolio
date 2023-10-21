@@ -22,12 +22,12 @@
     <title>Frontend Mentor | Minimalist Portfolio</title>
   </header>
   <body>
-    <div class="container">
+    <div id="container1" class="container">
       <nav>
         <div>
           <img src="/images/logo.svg" alt="Site logo" />
         </div>
-        <div>
+        <div class="hide-for-mobile">
           <ul class="nav__menu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -36,15 +36,33 @@
         </div>
         <div class="hide-for-desktop">
           <svg
+            id="hamburger"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="13"
             viewBox="0 0 24 13"
             fill="none"
           >
-            <rect width="24" height="1" fill="#33323D" />
-            <rect y="6" width="24" height="1" fill="#33323D" />
-            <rect y="12" width="24" height="1" fill="#33323D" />
+            <rect
+              width="24"
+              height="1"
+              fill="#33323D"
+              class="hamburger__bar hamburger-top"
+            />
+            <rect
+              y="6"
+              width="24"
+              height="1"
+              fill="#33323D"
+              class="hamburger__bar hamburger-mid"
+            />
+            <rect
+              y="12"
+              width="24"
+              height="1"
+              fill="#33323D"
+              class="hamburger__bar hamburger-bot"
+            />
           </svg>
         </div>
       </nav>
@@ -52,6 +70,10 @@
       <div class="hero1">
         <div class="hero1__content">
           <div class="flex-1 hero1__main">
+            <img
+              class="hide-for-desktop"
+              src="./images/homepage/mobile/image-homepage-hero.jpg"
+            />
             <h1>Hey I'm Alex Spencer and I love building beautiful websites</h1>
             <a href="#about-1">
               <button class="hero1_button">
@@ -66,12 +88,16 @@
       <!--About Me-->
       <section id="about-1">
         <div class="about">
-          <div class="flex__1 about__image"></div>
+          <div class="flex__1 about__image hide-for-mobile"></div>
+          <img
+            class="hide-for-desktop"
+            src="./images/homepage/mobile/image-homepage-profile.jpg"
+          />
           <div class="flex__1">
             <div class="about__container">
               <div class="flex__1"></div>
               <div class="flex__9">
-                <hr />
+                <hr class="line" />
                 <h1>About Me</h1>
                 <p class="about__content">
                   I’m a junior front-end developer looking for a new role in an
@@ -87,7 +113,7 @@
                 <a href="portfolio.html">
                   <button class="btn">GO TO PORTFOLIO</button>
                 </a>
-                <hr style="margin-top: 3em" />
+                <hr />
               </div>
               <div class="flex__2"></div>
             </div>
@@ -111,33 +137,32 @@
     </div>
 
     <!--Footer-->
-    <div class="footer">
+    <footer class="footer">
       <div class="container-1">
-        <div class="flex__1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="61"
-            height="32"
-            viewBox="0 0 61 32"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
-              fill="white"
-            />
-          </svg>
-        </div>
+        <!-- <div class="flex__1">  -->
+        <svg
+          class="footer__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="61"
+          height="32"
+          viewBox="0 0 61 32"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
+            fill="white"
+          />
+        </svg>
+        <!-- </div>  -->
         <div class="flex__1">
           <nav class="footer__nav">
-            <div>
-              <ul class="footer__menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="contact.html">CONTACT ME</a></li>
-              </ul>
-            </div>
+            <ul class="footer__menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
           </nav>
         </div>
         <div class="flex__1 footer__social">
@@ -165,6 +190,6 @@
           </svg>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
