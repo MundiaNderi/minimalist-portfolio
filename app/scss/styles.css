@@ -264,6 +264,12 @@ svg {
 }
 .contact-page {
   display: flex;
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 200% */
 }
 .contact-page h1 {
   color: #33323d;
@@ -274,7 +280,7 @@ svg {
   line-height: 42px; /* 105% */
   letter-spacing: -0.357px;
   width: 350px;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 .contact-page p {
   color: #33323d;
@@ -418,6 +424,34 @@ svg {
   padding-bottom: -8%;
 }
 
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 0 32px;
+  }
+  .contact-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #33323d;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 200% */
+  }
+  .contact-page h1 {
+    justify-content: center;
+  }
+  .contact-me {
+    flex-direction: column;
+  }
+  .contact-me h1 {
+    flex-direction: column;
+  }
+  .Contact-form {
+    flex-direction: column;
+  }
+}
 .manage {
   display: flex;
   flex-direction: row;
@@ -784,4 +818,23 @@ svg {
 
 .color {
   background-color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 0 32px;
+  }
+  .bookmark {
+    flex-direction: column;
+  }
+  .previews {
+    flex-direction: column;
+    margin-top: 1em;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .color {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */
