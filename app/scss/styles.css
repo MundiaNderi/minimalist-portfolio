@@ -273,7 +273,7 @@ svg {
 }
 .contact-page h1 {
   color: #33323d;
-  font-family: Ibarra Real Nova;
+  font-family: "Ibarra Real Nova";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -284,7 +284,7 @@ svg {
 }
 .contact-page p {
   color: #33323d;
-  font-family: Public Sans;
+  font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -424,9 +424,13 @@ svg {
   padding-bottom: -8%;
 }
 
+.footer {
+  border: 2px solid red;
+}
+
 @media only screen and (max-width: 450px) {
   .container {
-    padding: 0 32px;
+    max-width: 390px;
   }
   .contact-page {
     flex-direction: column;
@@ -450,6 +454,9 @@ svg {
   }
   .Contact-form {
     flex-direction: column;
+  }
+  .footer {
+    margin-bottom: 0;
   }
 }
 .manage {

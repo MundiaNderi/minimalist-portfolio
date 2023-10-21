@@ -9,7 +9,7 @@
 
   h1 {
     color: #33323d;
-    font-family: Ibarra Real Nova;
+    font-family: "Ibarra Real Nova";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -22,7 +22,7 @@
 
   p {
     color: #33323d;
-    font-family: Public Sans;
+    font-family: "Public Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -163,13 +163,15 @@
   padding-top: 1%;
   padding-bottom: -8%;
 }
-
+.footer {
+  border: 2px solid red;
+}
 // Mobile queries //
 // small screens
 @media only screen and (max-width: 450px) {
   .container {
-    //max-width: 390px;
-    padding: 0 32px;
+    max-width: 390px;
+    //padding: 0 32px;
   }
 
   .contact-page {
@@ -200,5 +202,9 @@
   .Contact-form {
     //border: 2px solid yellow;
     flex-direction: column;
+  }
+
+  .footer {
+    margin-bottom: 0;
   }
 }
