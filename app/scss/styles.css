@@ -212,7 +212,7 @@ button {
 }
 
 svg {
-  padding-left: 10em;
+  padding-left: 16em;
 }
 
 @media only screen and (max-width: 450px) {
@@ -763,7 +763,7 @@ button {
 }
 
 svg {
-  padding-left: 10em;
+  padding-left: 16em;
 }
 
 @media only screen and (max-width: 450px) {
