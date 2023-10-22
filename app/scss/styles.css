@@ -73,15 +73,18 @@ nav {
   text-decoration: none;
   gap: 20px;
 }
-.nav__menu__menu li a {
+
+.nav__menu li a {
   color: hsl(245, 10%, 22%);
   display: block;
   text-align: center;
 }
-.nav__menu__menu li a:visited {
+
+.nav__menu li a:visited {
   color: #5fb4a2;
 }
-.nav__menu__menu li a:hover {
+
+.nav__menu li a:hover {
   color: blue;
 }
 
@@ -270,7 +273,7 @@ svg {
   }
   .mobile-menu.open {
     display: block;
-    background: #33323D;
+    background: #33323d;
     position: absolute;
     top: 60px; /* Adjust as needed to position the menu below the hamburger */
     width: 50%;
@@ -621,15 +624,18 @@ nav {
   text-decoration: none;
   gap: 20px;
 }
-.nav__menu__menu li a {
+
+.nav__menu li a {
   color: hsl(245, 10%, 22%);
   display: block;
   text-align: center;
 }
-.nav__menu__menu li a:visited {
+
+.nav__menu li a:visited {
   color: #5fb4a2;
 }
-.nav__menu__menu li a:hover {
+
+.nav__menu li a:hover {
   color: blue;
 }
 
@@ -818,7 +824,7 @@ svg {
   }
   .mobile-menu.open {
     display: block;
-    background: #33323D;
+    background: #33323d;
     position: absolute;
     top: 60px; /* Adjust as needed to position the menu below the hamburger */
     width: 50%;

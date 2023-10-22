@@ -4,5 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     hamburgerIcon.addEventListener("click", function () {
       mobileMenu.classList.toggle("open");
+      hamburgerIcon.classList.toggle("open");
     });
   });
