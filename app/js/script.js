@@ -1,5 +1,8 @@
-$(document).ready(function() {
-    $('#hamburger').on('click', function() {
-        this.classList.toggle('active')
-    })
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburgerIcon = document.getElementById("hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    hamburgerIcon.addEventListener("click", function () {
+      mobileMenu.classList.toggle("open");
+    });
+  });
