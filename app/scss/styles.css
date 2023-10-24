@@ -990,7 +990,7 @@ svg {
   display: flex;
   flex-direction: row;
   margin-bottom: 4em;
-  background-color: #fafafa;
+  background-color: #fff;
 }
 .bookmark__manage1 {
   color: #33323d;
@@ -1004,7 +1004,8 @@ svg {
 
 .previews {
   padding-left: 55%;
-  margin-top: -260px;
+  margin-top: -180px;
+  background-color: white;
 }
 
 .color {
