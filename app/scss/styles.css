@@ -465,6 +465,7 @@ svg {
   border-radius: 4px;
   background-color: white;
   opacity: 0.3;
+  border-radius: 0%;
 }
 
 .red-btn {
