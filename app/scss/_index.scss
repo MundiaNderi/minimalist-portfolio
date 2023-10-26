@@ -275,6 +275,10 @@ svg {
     display: block;
   }
 
+  .hamburger {
+    margin-left: -83px;
+  }
+
   .mobile-menu {
     transition: transform 0.3s ease-in-out;
   }
